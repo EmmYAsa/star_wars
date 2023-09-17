@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+}
+
+h1 img{
+    width: 50%;
+    filter: drop-shadow(1px 1px 5px rgb(32, 108, 202));
+}
+
+.content{
+    margin: 15px 25px;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-gap: 10px;
+}
+
+.content{
+    text-align: center;
+}
+
+.contant .card:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(32, 108, 207);
+    transform: scale(1.05);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+h3.card-header{
+    font-size: 1.2em;
+    height: 66px;
+}
+
+.page-link{
+    cursor: pointer;
+}
+
+.nav-pills{
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.details{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:30px;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-info .card-title{
+    margin-top: 50px;
+}
+
+.border-info{
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: row;
+}
+
+.border-info img{
+    width: 300px;
+}
+
+.details i{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+ul.card-text li{
+    list-style-type: none;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 40px;
+}
+
+ul.card-text li span:first-child{
+    color: #1ba2f6;
+}
